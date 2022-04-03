@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LAB">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAB-3</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container" ng-controller="LABController">
+    <h1>Мій сніданок</h1>
+    <div class="box">
+      <div class="input-form">
+        <input ng-model="products" title="Продукти мають записуватись через кому" type="text" placeholder="Яблуко, банан, ...">
+      </div>
+      <div class="result-box">
+        <p>{{note}}</p>
+      </div>
+      <button id="btn" ng-click="breakfast()">Чи не забагато?</button>
+    </div>
+  </div>
+</body>
+
+</html>
